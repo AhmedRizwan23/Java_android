@@ -58,7 +58,8 @@
                 android:background="@drawable/circle_shape"
                 android:gravity="center"
                 android:padding="5dp"
-                   android:src="@drawable/ic_launcher_foreground" />
+                android:scaleType="center"
+                   android:src="@drawable/check_circle" />
 
 
             <TextView
@@ -144,10 +145,11 @@
                 android:id="@+id/my_text_view"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="@drawable/circle_shape"
+                android:background="@drawable/circle_shape_grey"
                 android:gravity="center"
                 android:padding="5dp"
-                android:src="@drawable/ic_launcher_foreground" />
+                android:scaleType="center"
+                android:src="@drawable/chart_line_down" />
 
 
             <TextView
@@ -195,10 +197,11 @@
 
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="@drawable/circle_shape"
+                android:background="@drawable/circle_red"
                 android:gravity="center"
                 android:padding="5dp"
-                android:src="@drawable/ic_launcher_foreground" />
+                android:scaleType="center"
+                android:src="@drawable/money_check" />
 
 
             <TextView
@@ -238,10 +241,11 @@
 
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="@drawable/circle_shape"
+                android:background="@drawable/circle_yellow"
                 android:gravity="center"
                 android:padding="5dp"
-                android:src="@drawable/ic_launcher_foreground" />
+                android:scaleType="center"
+                android:src="@drawable/recharge" />
 
 
             <TextView
