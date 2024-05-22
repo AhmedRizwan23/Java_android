@@ -1,32 +1,32 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:padding="16dp"
-    tools:context=".MainActivity">
+    android:padding="10dp"
 
+    tools:context=".MainActivity">
 
 
     <TextView
         android:id="@+id/dashboard_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
         android:text="Organization Performance Dashboard"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:paddingBottom="16dp"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/last_updated"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
         android:text="Last Updated: 12/07/2023"
         android:textColor="#757575"
-        android:textSize="14sp"
 
-        android:paddingBottom="8dp"/>
+        android:textSize="14sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,29 +34,27 @@
         android:orientation="horizontal"
 
 
-        android:paddingBottom="16dp">
+        >
 
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-
-
-
+            android:layout_weight="1"
 
 
             app:cardCornerRadius="18dp"
 
-           >
+            >
+
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:gravity="center"
 
-
-                >
+                android:orientation="vertical">
 
                 <TextView
 
@@ -65,6 +63,7 @@
                     android:text="90 days"
 
                     />
+
                 <ImageView
 
                     android:layout_width="50dp"
@@ -81,8 +80,8 @@
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingBottom="4dp"
                     android:layout_gravity="center"
+                    android:paddingBottom="4dp"
 
                     android:text="Activity Base"
                     android:textSize="14sp" />
@@ -96,101 +95,121 @@
                     android:textStyle="bold" />
 
 
-
             </LinearLayout>
 
 
         </androidx.cardview.widget.CardView>
 
-        <LinearLayout
+        <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#FFFFFF"
-            android:gravity="center"
-            android:orientation="vertical"
             android:layout_margin="10dp"
+            android:layout_weight="1"
 
 
-            android:padding="8dp">
-            <TextView
+            app:cardCornerRadius="18dp"
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            >
 
-                android:text="+3.81%"
-                />
-            <ImageView
-
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="@drawable/circleshape_green"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
                 android:gravity="center"
-                android:padding="5dp"
-                android:scaleType="center"
-                android:src="@drawable/chart_line" />
+                android:orientation="vertical"
 
 
-            <TextView
+                >
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingBottom="4dp"
-                android:text="New Sale"
-                android:textSize="14sp" />
+                <TextView
 
-            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="45K"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-        </LinearLayout>
+                    android:text="+3.81%" />
+
+                <ImageView
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/circleshape_green"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/chart_line" />
 
 
-        <LinearLayout
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:text="New Sale"
+                    android:textSize="14sp" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="45K"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#FFFFFF"
-            android:gravity="center"
-            android:orientation="vertical"
+            android:layout_height="match_parent"
             android:layout_margin="10dp"
-            android:padding="8dp">
-            <TextView
+            android:layout_weight="1"
+            app:cardCornerRadius="18dp">
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="145k"
-                />
-            <ImageView
-                android:id="@+id/my_text_view"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="@drawable/circle_shape_grey"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="#FFFFFF"
                 android:gravity="center"
-                android:padding="5dp"
-                android:scaleType="center"
-                android:src="@drawable/chart_line_down" />
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="145k" />
+
+                <ImageView
+                    android:id="@+id/my_text_view"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/circle_shape_grey"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/chart_line_down" />
 
 
-            <TextView
+                <TextView
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingBottom="4dp"
-                android:text="Churn"
-                android:textSize="14sp" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:text="Churn"
+                    android:textSize="14sp" />
 
-            <TextView
+                <TextView
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="145K"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-        </LinearLayout>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="145K"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
 
     </LinearLayout>
 
@@ -198,24 +217,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:weightSum="2"
-        android:paddingBottom="16dp">
+        android:paddingBottom="16dp"
+        android:weightSum="2">
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="#FFFFFF"
             android:gravity="center"
             android:orientation="vertical"
-            android:layout_margin="10dp"
             android:padding="8dp">
+
             <TextView
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="90 days"
-                />
+                android:text="90 days" />
+
             <ImageView
 
                 android:layout_width="50dp"
@@ -248,18 +268,19 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="#FFFFFF"
             android:gravity="center"
             android:orientation="vertical"
-            android:layout_margin="10dp"
             android:padding="8dp">
+
             <TextView
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="90 days"
-                />
+                android:text="90 days" />
+
             <ImageView
 
                 android:layout_width="50dp"
@@ -304,5 +325,5 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
 
-        android:contentDescription="Organization Goals Chart"/>
+        android:contentDescription="Organization Goals Chart" />
 </LinearLayout>
