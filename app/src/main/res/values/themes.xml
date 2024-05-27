@@ -1,8 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight">    <!-- Primary branding color for the app -->
+        <item name="colorPrimary">#262626</item>
+
+      \
+        <!-- Accent color for highlighting parts of the UI -->
+        <item name="colorAccent">#FF0000</item>
+        <!-- Background color for the app -->
+        <item name="android:colorBackground">#FFFFFF</item>
     </style>
 
     <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />
